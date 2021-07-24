@@ -1,8 +1,10 @@
-# <p style='text-align: center'>**Message Generator Program**</p>
-<p style='text-align: center'>[*Here you can see the demo of this project*](google.com)</p>
--
+# <h1 align="center">Message Generator Program</h1>
+<h2 align="center" href="https://necogamy.github.io/message_generator_program/"><a>Here you can see the demo of this project</a></h2>
 
 <br/>
+
+## **Overview**
+![screenshot](overview.png)
 
 ## **Features**
 * Every time a user runs the program, they should get a new, randomized output.
@@ -13,6 +15,7 @@
 * JavaScript - ECMAScript-6
 * CSS-3
 * HTML-5
+* Sass
 
 ## **Other tools used**
 * Git
