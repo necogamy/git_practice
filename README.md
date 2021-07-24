@@ -1,5 +1,5 @@
 # <h1 align="center">Message Generator Program</h1>
-<h2 align="center" href="https://necogamy.github.io/message_generator_program/"><a>Here you can see the demo of this project</a></h2>
+<h2 align="center"><a href="https://necogamy.github.io/message_generator_program/">Here you can see the demo of this project</a></h2>
 
 <br/>
 
