@@ -1,4 +1,4 @@
-// Random Generator of jokes
+// Random Generator of ninja names
 // Everytime runs, randomize output
 // Combine components to display final message.
 
@@ -42,5 +42,49 @@ function randomizeNinjaName() {
     let random_2 = NINJA_NAMES_FRAGMENTS[randomKey()];
     let random_3 = NINJA_NAMES_FRAGMENTS[randomKey()];
 
-    return `Your new ninja name is: ${random}${random_2}${random_3}`;
+    return `${random}${random_2}${random_3}`;
 };
+
+
+// DOM manage
+const body = document.getElementById('body');
+const display = document.getElementById('ninja-name');
+const generate = document.getElementById('new-ninja-name');
+
+display.innerHTML = randomizeNinjaName();
+
+generate.addEventListener('click', () => {
+    display.innerHTML = randomizeNinjaName();
+});
+
+// Change Background and Text color every touch
+let cls_bg = 'bg-color-1';
+let cls_txt = 'txt-color-1';
+
+function change(value) {
+    let reg = /\d/;
+    let temp = 0;
+
+    for (let el of cls_bg) {
+        if (reg.test(el)) {
+            let tmp = parseInt(el);
+            if (value === 1) {
+                if (tmp < 4) {
+                    temp = tmp + 1;
+                } else {
+                    temp = 1;
+                }
+            }
+        }
+    }
+  
+    cls_bg = 'bg-color-' + temp;
+    cls_txt = 'txt-color-' + temp;
+};
+
+generate.addEventListener('click', () => {
+    change(1);
+    body.setAttribute('class', cls_bg);
+    generate.setAttribute('class', cls_bg);
+    display.setAttribute('class', cls_txt);
+});

@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+body {
+  font-family: "Roboto", sans-serif, Verdana;
+  text-shadow: -1px 1px 2px #dadada;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 98vw;
+  height: 95.5vh;
+}
+body div.background {
+  background-image: url("../../public/assets/ninja.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+body header {
+  text-align: center;
+  font-size: 25px;
+}
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 20px;
+}
+body main div button {
+  padding: 15px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  -webkit-box-shadow: 3px 3px 3px black;
+          box-shadow: 3px 3px 3px black;
+  color: #d4cccc;
+  font-weight: 900;
+}
+body main div h2#ninja-name {
+  text-transform: uppercase;
+  font-size: 50px;
+  text-shadow: 3px 1px 1px black;
+}
+
+.bg-color-1 {
+  background-color: #862626;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.bg-color-2 {
+  background-color: #277e85;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.bg-color-3 {
+  background-color: #273085;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.bg-color-4 {
+  background-color: #27852f;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.txt-color-1 {
+  color: #862626;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.txt-color-2 {
+  color: #277e85;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.txt-color-3 {
+  color: #273085;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.txt-color-4 {
+  color: #27852f;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
