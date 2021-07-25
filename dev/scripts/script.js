@@ -61,19 +61,17 @@ generate.addEventListener('click', () => {
 let cls_bg = 'bg-color-1';
 let cls_txt = 'txt-color-1';
 
-function change(value) {
+function change() {
     let reg = /\d/;
     let temp = 0;
 
     for (let el of cls_bg) {
         if (reg.test(el)) {
             let tmp = parseInt(el);
-            if (value === 1) {
-                if (tmp < 4) {
-                    temp = tmp + 1;
-                } else {
-                    temp = 1;
-                }
+            if (tmp < 4) {
+                temp = tmp + 1;
+            } else {
+                temp = 1;
             }
         }
     }
@@ -83,7 +81,7 @@ function change(value) {
 };
 
 generate.addEventListener('click', () => {
-    change(1);
+    change();
     body.setAttribute('class', cls_bg);
     generate.setAttribute('class', cls_bg);
     display.setAttribute('class', cls_txt);
