@@ -37,13 +37,26 @@ function randomKey() {
     return String.fromCharCode(random);
 };
 
+// Thanks to a person from the forum I changed this:
 function randomizeNinjaName() {
-    let random = NINJA_NAMES_FRAGMENTS[randomKey()];
-    let random_2 = NINJA_NAMES_FRAGMENTS[randomKey()];
-    let random_3 = NINJA_NAMES_FRAGMENTS[randomKey()];
+    let random = '';
 
-    return `${random}${random_2}${random_3}`;
-};
+    for (let i = 1; i <= 3; i++) {
+        random += NINJA_NAMES_FRAGMENTS[randomKey()];
+    }
+
+    return random;
+}
+
+// Of this:
+//
+// function randomizeNinjaName() {
+//     let random = NINJA_NAMES_FRAGMENTS[randomKey()];
+//     let random_2 = NINJA_NAMES_FRAGMENTS[randomKey()];
+//     let random_3 = NINJA_NAMES_FRAGMENTS[randomKey()];
+
+//     return `${random}${random_2}${random_3}`;
+// };
 
 
 // DOM manage
